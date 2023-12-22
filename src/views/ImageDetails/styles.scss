@@ -1,0 +1,51 @@
+@import '@styles/styles.scss';
+
+.imageDetails {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  &__media {
+    max-height: 500px;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  &__infoContainer {
+    margin-top: 24px;
+    max-width: 50%;
+    display: grid;
+    gap: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &--stats {
+      width: 100%;
+      display: flex;
+      column-gap: 24px;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    max-width: 60%;
+    text-align: center;
+  }
+
+  @include sm {
+    &__infoContainer {
+      width: 100%;
+      max-width: 100%;
+
+      &--stats {
+        justify-content: space-between;
+      }
+    }
+  }
+}

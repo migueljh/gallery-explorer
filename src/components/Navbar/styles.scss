@@ -1,0 +1,48 @@
+@import '@styles/styles.scss';
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 120px;
+
+  &__logoContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    &--logo {
+      max-width: 80px;
+      max-height: 80px;
+      display: block;
+    }
+  }
+
+  &__menuButton {
+    display: none;
+  }
+
+  @include sm {
+    justify-content: flex-start;
+    align-items: center;
+    min-height: auto;
+
+    &__logoContainer {
+      padding: 0;
+
+      &--name {
+        font-size: 20px;
+      }
+      &--logo {
+        max-width: 50px;
+        max-height: 50px;
+      }
+    }
+
+    &__menuButton {
+      display: block;
+      margin-left: auto;
+      margin-top: 2px;
+      z-index: 3;
+    }
+  }
+}

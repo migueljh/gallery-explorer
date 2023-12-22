@@ -1,0 +1,28 @@
+@import '@styles/styles.scss';
+
+.filterOption {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: $jungleGreen;
+  color: white;
+  @include hoverTransition();
+  &:hover {
+    background-color: white;
+    color: $jungleGreen;
+  }
+
+  &.selected {
+    background-color: white;
+    color: $jungleGreen;
+  }
+
+  &:disabled:not(.selected) {
+    background-color: white;
+    color: $jungleGreen;
+    opacity: 40%;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,48 @@
+@import '@styles/styles.scss';
+
+.imageGallery {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  &__gridThumbnail {
+    columns: 4 0px;
+    column-gap: 20px;
+  }
+
+  &__imageWrapper {
+    overflow: hidden;
+  }
+
+  &__loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -10% 0 0 -30%;
+  }
+
+  &__paginationContainer {
+    padding: 16px 0 32px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @include sm {
+    &__gridThumbnail {
+      columns: 1 0px;
+      column-gap: 20px;
+    }
+
+    &__loader {
+      margin: 0;
+    }
+
+    &__paginationContainer {
+      justify-content: center;
+    }
+  }
+}
