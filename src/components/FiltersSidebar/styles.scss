@@ -17,4 +17,10 @@
     flex-wrap: wrap;
     margin-top: 8px;
   }
+
+  @include sm {
+    &__row {
+      max-width: 80%;
+    }
+  }
 }

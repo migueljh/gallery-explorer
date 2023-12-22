@@ -23,16 +23,18 @@ export const Navbar: FC<NavbarProps> = ({ isMenuOpen, toggleMenu, showMenu }) =>
 
   return (
     <div className="navbar">
-      <button className="navbar__logoContainer" onClick={redirectToHome}>
-        <img src={GalleryExplorerLogo} alt="icon logo" className="navbar__logoContainer--logo" />
-        <h2 className="navbar__logoContainer--name">Gallery Explorer</h2>
-      </button>
-
-      {showMenu ? (
-        <button className="navbar__menuButton" onClick={toggleMenu}>
-          {isMenuOpen ? <Close /> : <MenuIcon />}
+      <div className="navbar__container">
+        <button className="navbar__logoContainer" onClick={redirectToHome}>
+          <img src={GalleryExplorerLogo} alt="icon logo" className="navbar__logoContainer--logo" />
+          <h2 className="navbar__logoContainer--name">Gallery Explorer</h2>
         </button>
-      ) : null}
+
+        {showMenu ? (
+          <button className="navbar__menuButton" onClick={toggleMenu}>
+            {isMenuOpen ? <Close /> : <MenuIcon />}
+          </button>
+        ) : null}
+      </div>
     </div>
   );
 };
