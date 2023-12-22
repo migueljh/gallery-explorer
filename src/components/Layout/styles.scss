@@ -16,7 +16,7 @@
   }
 
   @include sm {
-    padding: 24px;
+    padding: unset;
     &__filtersSidebar {
       display: none;
       min-width: 100%;

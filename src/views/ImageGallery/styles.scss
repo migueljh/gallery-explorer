@@ -32,9 +32,10 @@
   }
 
   @include sm {
+    padding: 24px;
     &__gridThumbnail {
       columns: 1 0px;
-      column-gap: 20px;
+      gap: 20px;
     }
 
     &__loader {
