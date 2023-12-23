@@ -12,7 +12,9 @@ Before running this project, please ensure you add the necessary environment var
 2. To install the required packages, run `yarn install`.
 3. To start the project, execute `yarn run dev`.
 4. Make sure you have an updated node version.
-5. Once running, check your console where, next to the 'Local' label, you will find the URL where the project is running.
+5. Once running, check your console where, next to the 'Network' label, you will find the URL where the project is running.
+
+Please make sure to enter in the network URL and not the localhost URL (imgur doesn't allow requests coming from localhost).
 
 This project is responsive and can be viewed on both desktop and mobile devices.
 
