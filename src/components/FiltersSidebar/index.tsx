@@ -23,7 +23,6 @@ export const FiltersSidebar: FC<FiltersSidebarProps> = ({ toggleMenu }) => {
   const dispatch = useAppDispatch();
 
   const handleFilterChange = <T,>(action: Action<T>, arg: T) => {
-    // this is to prevent the rising filter combination from being used with another non-user filter section, as specified in the API documentation https://apidocs.imgur.com/#eff60e84-5781-4c12-926a-208dc4c7cc94:~:text=viral%20%7C%20top%20%7C%20time%20%7C%20%7C%20rising%20(only%20available%20with%20user%20section).%20Defaults%20to%20viral
     if (action === setSection && filters.sort === GallerySort.Rising && arg !== GallerySection.User) {
       dispatch(setSort(GallerySort.Viral));
     }
