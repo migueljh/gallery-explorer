@@ -39,7 +39,7 @@
 
   &__title {
     font-weight: 700;
-    max-width: 60%;
+    max-width: 500px;
     text-align: center;
   }
 
@@ -57,10 +57,9 @@
         max-width: 100%;
       }
     }
-  }
-
-  &__title {
-    max-width: 100%;
-    font-size: 20px;
+    &__title {
+      max-width: 100%;
+      font-size: 20px;
+    }
   }
 }
