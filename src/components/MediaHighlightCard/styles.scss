@@ -10,13 +10,13 @@
     display: block;
     position: absolute;
     inset: 0;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: $opaque;
     border-radius: inherit;
     transition: background-color 0.3s ease-in-out;
   }
 
   &:hover:before {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: $whiteOpaque;
   }
   &__container {
     background-color: $jungleGreen;
