@@ -1,6 +1,4 @@
-# Welcome to Gallery Visualizer 👓 - Teach Away Code Challenge
-
-Hello on the other side of the screen, thank you for taking the time to review this challenge.
+# Welcome to Gallery Visualizer 👓
 
 This project is developed using React, TypeScript, Redux Toolkit, SASS, and Material UI components. It fetches and displays data from the Imgur API, specifically from the Gallery and Images endpoints.
 
